@@ -12,6 +12,9 @@ A premium, production-ready **Neo4j Enterprise** setup containerized with **Dock
 
 This repository provides a "one-click" environment to explore the power of graph databases. Whether you are a developer looking for a template or a data scientist wanting to test Neo4j Bloom, you've come to the right place.
 
+> [!TIP]
+> New to Cypher? Check out the [EXAMPLES.md](./EXAMPLES.md) file for a collection of ready-to-use queries!
+
 ---
 
 ## 🚀 Quick Start
