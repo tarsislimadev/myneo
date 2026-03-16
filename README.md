@@ -1,3 +1,3 @@
 # MyNEO
 
-Neo4j + Neo4j Browser + Neo4j Bloom
+A Docker image with Neo4j and Neo4j Browser
