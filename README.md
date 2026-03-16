@@ -4,7 +4,13 @@
 [![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white)](https://neo4j.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-A premium, production-ready **Neo4j** setup containerized with **Docker Compose**. This environment is pre-configured with the **APOC** (Awesome Procedures on Cypher) plugin and persistent storage, making it perfect for rapid graph database development and exploration.
+A premium, production-ready **Neo4j Enterprise** setup containerized with **Docker Compose**. This environment is pre-configured with **APOC** and **Neo4j Bloom**, making it an ideal boilerplate for advanced graph data science, visualization, and exploration.
+
+---
+
+## 👋 Welcome, Guests!
+
+This repository provides a "one-click" environment to explore the power of graph databases. Whether you are a developer looking for a template or a data scientist wanting to test Neo4j Bloom, you've come to the right place.
 
 ---
 
@@ -43,12 +49,13 @@ Use the default credentials to log in:
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-- **⚡ Latest Neo4j:** Running on the latest official Neo4j image.
-- **🛠️ APOC Plugin:** Pre-enabled for advanced graph algorithms and data integration.
-- **💾 Data Persistence:** Volumes mapped for data, logs, and plugins to ensure your work persists across restarts.
-- **🏥 Health Checks:** Integrated health checks to ensure the service is fully ready before use.
+- **🏆 Neo4j Enterprise:** Full access to enterprise features, including multi-database support and advanced security.
+- **🎨 Neo4j Bloom:** High-performance graph visualization and exploration tool.
+- **🛠️ APOC Plugin:** Awesome Procedures on Cypher are pre-enabled for advanced algorithms.
+- **💾 Data Persistence:** Volumes mapped for `data`, `logs`, `import`, and `plugins` to ensure your work is never lost.
+- **🏥 Health Checks:** Integrated monitoring ensures the database is ready before you start your work.
 
 ---
 
@@ -65,19 +72,28 @@ myneo/
 
 ---
 
-## 🛠️ Configuration
+## 🛠️ Configuration & Ports
 
-The following ports are exposed:
+The container exposes the following ports for local development:
 
-- `7474`: HTTP (Neo4j Browser)
-- `7473`: HTTPS (Neo4j Browser)
-- `7687`: Bolt (Database Drivers)
+- `7474`: HTTP (Neo4j Browser & Bloom access)
+- `7473`: HTTPS (Secure Neo4j Browser)
+- `7687`: Bolt (For connecting database drivers like Python, Java, or JS)
 
 ---
 
-## 🤝 Contributing
+## 🛑 Stopping the Services
 
-Feel free to fork this project, open issues, or submit pull requests to help improve this template!
+To stop and remove the containers while keeping your data safe:
+```bash
+docker compose down
+```
+
+---
+
+## 🤝 Contributing & Support
+
+If you find this template useful, feel free to **Star** the repository! Contributions are always welcome—simply fork the project and submit a PR.
 
 ---
 
