@@ -1,0 +1,16 @@
+# Neo4j persistent data
+neo4j_data/
+
+# Neo4j logs
+neo4j_logs/
+
+# Optional: keep plugins and imports if they contain shared files
+# neo4j_plugins/
+# neo4j_import/
+
+# Docker logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
