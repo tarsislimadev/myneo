@@ -1,0 +1,13 @@
+services:
+  neo4j:
+    image: neo4j:latest
+    ports:
+      - "7474:7474" # Neo4j Browser (HTTP)
+      - "7687:7687" # Bolt protocol (drivers)
+    environment:
+      - NEO4J_AUTH=neo4j/test123 # username: neo4j, password: test123
+    volumes:
+      - ./neo4j_data:/data # persistent database storage
+      - ./neo4j_logs:/logs # logs
+      - ./neo4j_import:/import # import directory for CSVs
+      - ./neo4j_plugins:/plugins # plugins/extensions
