@@ -1,0 +1,9 @@
+{
+  "name": "fbpeoplegraph",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "node app.js",
+    "install": "npx @puppeteer/browsers install chrome@stable"
+  },
+  "license": "MIT"
+}
